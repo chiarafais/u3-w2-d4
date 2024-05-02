@@ -3,10 +3,9 @@ import TvShow from "./TvShow";
 const Homepage = () => {
   return (
     <>
-      <TvShow filmName="Jhon Wick" galleryTitle="Action" />
-      <TvShow filmName="Pirates of the Caribbean" galleryTitle="Pirates of the Caribbean saga" />
-      <TvShow filmName="Avengers" galleryTitle="Avengers saga" />
-      <TvShow filmName="Star Wars" galleryTitle="Star Wars saga" />
+      <TvShow filmName="Fast and Furious" galleryTitle="Action" />
+      <TvShow filmName="Rick and Morty" galleryTitle="Cartoon for Adults" />
+      <TvShow filmName="American Horror Story" galleryTitle="Horror" />
     </>
   );
 };

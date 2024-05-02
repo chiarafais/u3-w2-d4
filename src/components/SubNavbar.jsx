@@ -1,9 +1,12 @@
 import Dropdown from "react-bootstrap/Dropdown";
+import { useLocation } from "react-router-dom";
 const SubNavbar = () => {
+  console.log(useLocation().pathname, "mewwwwwwwwww");
+
   return (
     <div className="d-flex justify-content-between bg-dark text-light px-4 align-items-center">
       <div className="d-flex align-items-center">
-        <h2 className="m-0">TV Shows</h2>
+        <h2 className="m-0">{useLocation().pathname === "/Homepage" ? "Home" : "Tv Show"}</h2>
         <Dropdown>
           <Dropdown.Toggle variant="success" id="dropdown-basic" className="bg-transparent dropdownSubNavbar">
             Generes

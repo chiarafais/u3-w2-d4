@@ -8,6 +8,7 @@ import MyFooter from "./components/MyFooter";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Gallery from "./components/Gallery";
 import Homepage from "./components/Homepage";
+import MovieDetail from "./components/MovieDetail";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <SubNavbar />
         <Routes>
           <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/MovieDetail/:movieID" element={<MovieDetail />} />
           <Route path="/Homepage" element={<Homepage />} />
         </Routes>
         <MyFooter />

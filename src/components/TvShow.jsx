@@ -26,7 +26,6 @@ const TvShow = ({ filmName, galleryTitle }) => {
       })
       .then((films) => {
         setFilms(films.Search);
-        console.log(films);
       })
       .catch((err) => {
         console.log(err);
@@ -88,7 +87,7 @@ const TvShow = ({ filmName, galleryTitle }) => {
               return (
                 <Row key={film.imdbID}>
                   <Col className="p-0 position-relative">
-                    <NavLink to={`/tvShows/MovieDetail/:${film.imdbID}`}>
+                    <NavLink to={`/MovieDetail/${film.imdbID}`}>
                       <Image src={film.Poster} className="img-fluid imageFilmPoster" />
                       <span className="netflixLogo">
                         <Image src={netflixLogo}></Image>

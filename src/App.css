@@ -100,3 +100,14 @@ h2 {
 .slider-container {
   margin-inline: 10px;
 }
+.cardDetail {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-inline: auto;
+  align-items: center;
+}
+.divContainerCard {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
